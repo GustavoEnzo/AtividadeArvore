@@ -98,13 +98,13 @@ void rem(Arv *raiz, int valor)
 	}
 }
 
-int altura (Arv *root) {
+int altura (Arv *raiz) {
    if (root == NULL) 
       return -1;
    else {
-      int he = altura (root->esquerda);
-      int hd = altura (root->direita);
-      if (he < hd) return he + 1;
+      int alte = altura (raiz->esquerda);   //não consegui imprimir corretamente a altura, e não identifiquei o erro, peço desculpas
+      int altd = altura (raiz->direita);
+      if (alte < altd) return he + 1;
       else return hd + 1;
    }
 }
